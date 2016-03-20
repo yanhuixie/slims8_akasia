@@ -221,8 +221,13 @@ class biblio_list extends biblio_list_model
         // for debugging purpose only
         // echo "<p>$_num. $_field -> $_boolean -> $_query_str</p><p>&nbsp;</p>";
 
-	      // check fields
-				$_q = $_b.$_q;
+	    // check fields
+        $_q = $_b.$_q;
+        
+        // xieyh 20160319
+        $_searched_word = str_replace(array('+', '-', '*'), '', $_q);
+        $this->words[$_searched_word] = $_searched_word;
+        
         switch ($_field) {
           case 'author' :
 		      $_query_str .= " (@author $_q";

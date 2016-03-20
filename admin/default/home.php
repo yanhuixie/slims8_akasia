@@ -322,16 +322,16 @@ if($sysconf['admin_home']['mode'] == 'default') {
             <div class="col-lg-8 s-dashboard">
               <div class="panel panel-info">
                 <div class="panel-heading">
-                  <h2 class="panel-title">Latest Transactions</h2>
+                  <h2 class="panel-title"><?php echo __('Latest Transactions') ?></h2>
                 </div>
                 <div class="panel-body">
                     <canvas id="line-chartjs" height="319"></canvas>            
                 </div>
                 <div class="panel-footer">
                     <div class="s-dashboard-legend">
-                        <div><i class="fa fa-square" style="color:#f2f2f2;"></i> New</div>
-                        <div><i class="fa fa-square" style="color:#459CBD;"></i> Return</div>
-                        <div><i class="fa fa-square" style="color:#5D45BD;"></i> Extend</div>
+                        <div><i class="fa fa-square" style="color:#f2f2f2;"></i> <?php echo __('New') ?></div>
+                        <div><i class="fa fa-square" style="color:#459CBD;"></i> <?php echo __('Return') ?></div>
+                        <div><i class="fa fa-square" style="color:#5D45BD;"></i> <?php echo __('Extend') ?></div>
                     </div>
                 </div>
               </div>
@@ -339,7 +339,7 @@ if($sysconf['admin_home']['mode'] == 'default') {
             <div class="col-lg-4 s-dashboard">
               <div class="panel panel-default s-dashboard">
                 <div class="panel-heading">
-                  <h2 class="panel-title">Summary</h2>
+                  <h2 class="panel-title"><?php echo __('Summary') ?></h2>
                 </div>
                 <div class="panel-body">
                     <div class="s-chart">                        
@@ -349,23 +349,23 @@ if($sysconf['admin_home']['mode'] == 'default') {
                 <div class="panel-footer">
                     <table class="table">
                         <tr>
-                            <td class="text-left"><i class="fa fa-square" style="color:#f2f2f2;"></i>&nbsp;&nbsp;Total</td>
+                            <td class="text-left"><i class="fa fa-square" style="color:#f2f2f2;"></i>&nbsp;&nbsp;<?php echo __('Total') ?></td>
                             <td class="text-right"><?php echo $get_total?></td>
                         </tr>
                         <tr>
-                            <td class="text-left"><i class="fa fa-square" style="color:#337AB7;"></i>&nbsp;&nbsp;New</td>
+                            <td class="text-left"><i class="fa fa-square" style="color:#337AB7;"></i>&nbsp;&nbsp;<?php echo __('New') ?></td>
                             <td class="text-right"><?php echo $get_total_loan?></td>
                         </tr>
                         <tr>
-                            <td class="text-left"><i class="fa fa-square" style="color:#06B1CD;"></i>&nbsp;&nbsp;Return</td>
+                            <td class="text-left"><i class="fa fa-square" style="color:#06B1CD;"></i>&nbsp;&nbsp;<?php echo __('Return') ?></td>
                             <td class="text-right"><?php echo $get_total_return?></td>
                         </tr>
                         <tr>
-                            <td class="text-left"><i class="fa fa-square" style="color:#4AC49B;"></i>&nbsp;&nbsp;Extends</td>
+                            <td class="text-left"><i class="fa fa-square" style="color:#4AC49B;"></i>&nbsp;&nbsp;<?php echo __('Extends') ?></td>
                             <td class="text-right"><?php echo $get_total_extends?></td>
                         </tr>
                         <tr>
-                            <td class="text-left"><i class="fa fa-square" style="color:#F4CC17;"></i>&nbsp;&nbsp;Overdue</dd>
+                            <td class="text-left"><i class="fa fa-square" style="color:#F4CC17;"></i>&nbsp;&nbsp;<?php echo __('Overdue') ?></dd>
                             <td class="text-right"><?php echo $get_total_overdue?></td>
                         </tr>
                     </table>                                      
@@ -379,7 +379,7 @@ if($sysconf['admin_home']['mode'] == 'default') {
                     <div class="panel-body">
                         <div class="s-widget-icon"><i class="fa fa-bookmark"></i></div>
                         <div class="s-widget-value"><?php echo $get_total_title?></div>
-                        <div class="s-widget-title">Total of Collections</div>                  
+                        <div class="s-widget-title"><?php echo __('Total of Collections') ?></div>                  
                     </div>
                 </div>
             </div>
@@ -388,7 +388,7 @@ if($sysconf['admin_home']['mode'] == 'default') {
                     <div class="panel-body">
                         <div class="s-widget-icon"><i class="fa fa-barcode"></i></div>
                         <div class="s-widget-value"><?php echo $get_total_item?></div>
-                        <div class="s-widget-title">Total of Items</div>                  
+                        <div class="s-widget-title"><?php echo __('Total of Items') ?></div>                  
                     </div>
                 </div>
             </div>
@@ -397,7 +397,7 @@ if($sysconf['admin_home']['mode'] == 'default') {
                     <div class="panel-body">
                         <div class="s-widget-icon"><i class="fa fa-archive"></i></div>
                         <div class="s-widget-value"><?php echo $get_total_loan?></div>
-                        <div class="s-widget-title">Lent</div>                  
+                        <div class="s-widget-title"><?php echo __('Lent') ?></div>                  
                     </div>
                 </div>
             </div>
@@ -406,7 +406,7 @@ if($sysconf['admin_home']['mode'] == 'default') {
                     <div class="panel-body">
                         <div class="s-widget-icon"><i class="fa fa-check"></i></div>
                         <div class="s-widget-value"><?php echo $get_total_available?></div>
-                        <div class="s-widget-title">Available</div>                  
+                        <div class="s-widget-title"><?php echo __('Available') ?></div>                  
                     </div>
                 </div>
             </div>

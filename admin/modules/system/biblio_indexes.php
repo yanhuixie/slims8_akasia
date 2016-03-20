@@ -110,6 +110,14 @@ if (isset($_POST['detail']) OR (isset($_GET['action']) AND $_GET['action'] == 'd
     	$_SESSION['message'] = $message;
     }
   }
+  /**
+   * perform sphinx index rebuild
+   */
+  if($sysconf['index']['type'] == 'sphinx'){
+      $outp = []; $rtn = 0;
+      exec($sysconf['index']['sphinx_rebuild_exec'].' 2>&1', $outp, $rtn);
+      //var_export($outp); var_export($rtn); die;
+  }
   
   echo '<script type="text/javascript">parent.$(\'#mainContent\').simbioAJAX(\''.$_SERVER['PHP_SELF'].'\');</script>';
   exit();
@@ -127,7 +135,7 @@ if (isset($_POST['detail']) OR (isset($_GET['action']) AND $_GET['action'] == 'd
           <a href="<?php echo MWB; ?>system/biblio_indexes.php?action=detail&detail=update" class="btn btn-default"><i class="glyphicon glyphicon-plus"></i>&nbsp;<?php echo __('Update Index'); ?></a>
         </div>
       </div>
-      <div class="infoBox">Bibliographic Index will speed up catalog search</div>
+      <div class="infoBox"><?php echo __('Bibliographic Index will speed up catalog search'); ?></div>
 </div>
 </fieldset>
 <?php
@@ -149,8 +157,8 @@ if (isset($_SESSION['message'])) {
   echo '<div class="alert alert-info">'.$_SESSION['message'].'</div>';
   unset($_SESSION['message']);
 }
-echo '<div>Total data on biblio: ' . $bib_total . ' records.</div>';
-echo '<div>Total indexed data: ' . $idx_total . ' records.</div>';
-echo '<div>Unidexed data: ' . $unidx_total . ' records.</div>';
+echo '<div>'.__('Total data on biblio: ') . $bib_total .__( ' records.').'</div>';
+echo '<div>'.__('Total indexed data: ') . $idx_total . __(' records.').'</div>';
+echo '<div>'.__('Unidexed data: ') . $unidx_total . __(' records.').'</div>';
 echo '</div>';
 }

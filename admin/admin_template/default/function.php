@@ -51,6 +51,11 @@ function main_menu()
     'logout'         => 'fa fa-close',
     'opac'           => 'fa fa-desktop'
     );
+  //fake, just for translation po... xieyh :(
+  $translations	  = array(
+    'bibliography'   => __('Bibliography'),
+    'master_file'    => __('Master File'),
+  );
   
   $appended_first  = '<li><input type="radio" name="s-menu" id="home" role="button"><label for="home" class="menu home"><i class="nav-icon '.$icon['home'].'"></i> <span class="s-menu-title">'.__('Shortcut').'</span></label><input type="radio" name="s-menu" class="s-menu-close" id="home-close" role="button"><label for="home-close" class="menu home s-current s-menu-hide"><i class="nav-icon '.$icon['home'].'"></i> <span class="s-menu-title">'.__('Home').'</span></label>';
   $_mods_q = $dbs->query('SELECT * FROM '.$module_table);
@@ -61,7 +66,7 @@ function main_menu()
   $_menu 	.= $appended_first;
   $_menu 	.= @sub_menu('default', $module_list);
   $_menu 	.= '</li>'."\n";
-  $_menu 	.= '<li><a class="menu dashboard" href="'.AWB.'index.php"><i class="nav-icon fa fa-dashboard"></i> <span class="s-menu-title">Dashboard</span></a></li>';
+  $_menu 	.= '<li><a class="menu dashboard" href="'.AWB.'index.php"><i class="nav-icon fa fa-dashboard"></i> <span class="s-menu-title">'.__('Dashboard').'</span></a></li>';
   $_menu 	.= '<li><a class="menu opac" href="'.SWB.'index.php" target="_blank"><i class="nav-icon '.$icon['opac'].'"></i> <span class="s-menu-title">Opac</span></a></li>';
   if ($module_list) {
     foreach ($module_list as $_module) {
@@ -74,7 +79,7 @@ function main_menu()
       }
     }
   }
-  $_menu .= '<li><a class="menu logout" href="logout.php"><i class="nav-icon '.$icon['logout'].'"></i> <span class="s-menu-title">Logout</span></a></li>';
+  $_menu .= '<li><a class="menu logout" href="logout.php"><i class="nav-icon '.$icon['logout'].'"></i> <span class="s-menu-title">'.__('Logout').'</span></a></li>';
   $_menu .= '</ul>';
   echo $_menu;
 }

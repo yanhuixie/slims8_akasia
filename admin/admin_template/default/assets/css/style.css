@@ -175,7 +175,7 @@ a:hover {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-weight: lighter;
-	font-size: 10px;
+	font-size: 12px;
 	white-space: nowrap;
 	-webkit-transition-duration: 0.25s;
 	-moz-transition-duration: 0.25s;
@@ -231,7 +231,7 @@ a:hover {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-weight: lighter;
-	font-size: 10px;
+	font-size: 12px;
 }
 /*----------------*/
 
@@ -337,7 +337,7 @@ a:hover {
 }
 .s-user-name {
 	font-family: Abel, sans-serif;
-	font-size: 10px;
+	font-size: 12px;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: lighter;
@@ -488,7 +488,7 @@ a:hover {
 .keytip {
 	float: right;
 	margin-top: 10px;
-	font-size: 8px;
+	font-size: 12px;
 	padding: 2px 3px !important;
 	color: #ccc;
 }
@@ -521,7 +521,7 @@ input[name="saveDaynameData"],
 	text-align: left;
 	text-transform: uppercase;
 	font-weight: lighter;
-	font-size: 10px;
+	font-size: 12px;
 	white-space: nowrap;
 	line-height: 1.42857143;
 	vertical-align: middle;
@@ -1019,7 +1019,7 @@ fieldset[disabled] input[type="text"] {
 }
 tr.dataListHeader,
 tr.dataListHeader:hover {
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: normal !important;
 	background-color: #31353E !important;
 	color: #fff;
@@ -1035,7 +1035,7 @@ tr.dataListHeader a[href*='DESC']:after {
 	content: '\f0d7';
 	padding-left: 3px;
 }
-td..dataListHeader {
+td.dataListHeader {
 	background-color: #ff0 !important;
 	padding:25px 10px !important;
 }
@@ -1046,7 +1046,7 @@ td..dataListHeader {
 		text-align: left;
 		text-transform: uppercase;
 		font-weight: lighter;
-		font-size: 10px;
+		font-size: 12px;
 	}
 }
 tr.dataListHeader td {
@@ -1144,7 +1144,7 @@ tr.dataListHeader > td > a {
 }
 @media (min-width: 10px) {
 	.authors {
-		font-size: 10px;
+		font-size: 12px;
 		padding-top: 5px;
 	}
 }
@@ -1257,7 +1257,7 @@ tr.dataListHeader > td > a {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-weight: lighter;
-	font-size: 10px;
+	font-size: 12px;
 	white-space: nowrap;
 }
 #cboxOverlay {
@@ -1485,7 +1485,7 @@ tr.dataListHeader > td > a {
 	padding-top: 10px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 12px;
 	color: #06B1CD;
 }
 .s-member-account tr .alterCell strong {
@@ -1592,7 +1592,7 @@ tr.dataListHeader > td > a {
 	display: -webkit-box;
 }
 .circ-action-btn a {
-	font-size: 10px;
+	font-size: 12px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	white-space: nowrap;
@@ -1793,7 +1793,7 @@ input[type="date"]::-webkit-input-placeholder {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-weight: lighter;
-	font-size: 10px;
+	font-size: 12px;
 	white-space: nowrap;
 }
 td.dataListHeaderPrinted,
@@ -1896,7 +1896,7 @@ div.label-multimedia {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-weight: lighter;
-	font-size: 10px;
+	font-size: 12px;
 	white-space: nowrap;
 }
 /*----------
@@ -2260,7 +2260,7 @@ table {
   left:-1px;
   padding: 20px 0;
   position: relative;
-  font-size: 8px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #fff;
@@ -2283,7 +2283,7 @@ table {
 
 .s-chat-content label {
   padding:10px 0;
-  font-size: 8px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -2328,7 +2328,7 @@ table {
 
 .s-chat footer {
   border-top: solid 1px #ddd;
-  font-size: 10px;
+  font-size: 12px;
   padding: 8pt !important;
 }
 

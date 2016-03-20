@@ -248,7 +248,7 @@ a:hover {
   line-height: 30pt;
 }
 .s-menu-content a {
-  font-size: 8pt;
+  font-size: 9pt;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #000;
@@ -297,7 +297,7 @@ a:hover {
   color: #000;
 }
 .s-menu-info label {
-  font-size: 8pt;
+  font-size: 9pt;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #bbb;
@@ -587,7 +587,7 @@ a:hover {
   width: 100%;
   padding: 20px 50px;
   margin: 0 auto;
-  font-size: 8pt;
+  font-size: 9pt;
   color: #ccc;
   text-transform: uppercase;
   z-index: 3001;
@@ -1215,7 +1215,7 @@ keyframes coverUp 100% {
 .biblioRecord .detailLink,
 .biblioRecord .xmlDetailLink,
 .biblioRecord .citationLink {
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
   white-space: nowrap;
@@ -1241,7 +1241,7 @@ keyframes coverUp 100% {
   color: #fff;
 }
 .customField {
-  font-size: 8pt;
+  font-size: 9pt;
   line-height: 14pt;
   text-align: center;
   border: solid 1px #f2f2f2;
@@ -1343,7 +1343,7 @@ keyframes coverUp 100% {
   display: table;
 }
 .control-label {
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 4px;
   width: 100%;
@@ -1388,7 +1388,7 @@ keyframes coverUp 100% {
   position: fixed;
   top: 0px;
   right: 0px;
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #fff ;
@@ -1420,7 +1420,7 @@ keyframes coverUp 100% {
   border: none;
   background: #282828;
   color: #fff;
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 4px;
   text-transform: uppercase;
   padding: 5px 26px;
@@ -1508,7 +1508,7 @@ keyframes coverUp 100% {
 .librarian .key {
   font-size: 12px;
   margin-bottom: -15px;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #000;
@@ -1552,8 +1552,8 @@ keyframes coverUp 100% {
   border: none;
   background: #282828;
   color: #fff;
-  font-size: 8px;
-  letter-spacing: 4px;
+  font-size: 10px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   padding: 5px 15px;
   width: 100%;
@@ -1593,7 +1593,7 @@ keyframes coverUp 100% {
 }
 .memberDetail .alterCell {
   background-color: #f2f2f2;
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 4px;
   text-transform: uppercase;
   padding: 0px 15px;
@@ -1628,7 +1628,7 @@ keyframes coverUp 100% {
   background: #282828;
   color: #fff;
   letter-spacing: 4px;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -1658,7 +1658,7 @@ keyframes coverUp 100% {
   color: #fff;
   padding: 10px 15px;
   letter-spacing: 4px;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
   -webkit-transition: all 500ms;
   transition: all 500ms;
@@ -1834,7 +1834,7 @@ keyframes coverUp 100% {
 }
 .s-table th {
   font-weight: 300;
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 2px;
   text-align: right;
   text-transform: uppercase;
@@ -1865,7 +1865,7 @@ keyframes coverUp 100% {
   display: inline;
   margin: 0 -7px;
   padding: 10px 11px;
-  font-size: 7pt;
+  font-size: 9pt;
   letter-spacing: 4px;
   text-transform: uppercase;
   background-color: #fff;
@@ -1904,7 +1904,7 @@ keyframes coverUp 100% {
 }
 #loginForm .heading1 {
   letter-spacing: 4px;
-  font-size: 8pt;
+  font-size: 9pt;
   text-transform: uppercase;
   color: #000;
 }
@@ -1992,7 +1992,7 @@ keyframes coverUp 100% {
   border-radius: 0;
   border: none;
   background-color: #282828;
-  font-size: 8px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   white-space: nowrap;
@@ -2061,7 +2061,7 @@ keyframes coverUp 100% {
   width: 255px !important;
   letter-spacing: 4px;
   text-transform: uppercase;
-  font-size: 8pt !important;
+  font-size: 9pt !important;
   color: #000;
 }
 .s-visitor {
@@ -2075,7 +2075,7 @@ keyframes coverUp 100% {
   }
 }
 .s-visitor header span {
-  font-size: 8;
+  font-size: 10px;
   font-weight: light;
 }
 .s-visitor input {
@@ -2086,13 +2086,13 @@ keyframes coverUp 100% {
 .s-visitor input[type=submit] {
   padding: 0;
   background-color: #282828;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #fff;
 }
 .s-visitor label {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
@@ -2119,7 +2119,7 @@ keyframes coverUp 100% {
   list-style: none;
   margin: 3px auto;
   text-align: center;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -2270,7 +2270,7 @@ keyframes coverUp 100% {
   color: #000;
   display: block;
   background: #fff;
-  font-size: 8pt;
+  font-size: 9pt;
   border-width: 1px;
   border-style: solid;
   border-color: #f2f2f2;
@@ -2308,7 +2308,7 @@ keyframes coverUp 100% {
   width: 275px;
   padding: 21px 0;
   position: relative;
-  font-size: 7pt;
+  font-size: 9pt;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
@@ -2318,7 +2318,7 @@ keyframes coverUp 100% {
 }
 .s-chat-content label {
   padding: 10px 0;
-  font-size: 8px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }

@@ -451,7 +451,7 @@ if (!$is_member_login) {
             $_criteria = "b.biblio_id IN ($_ids)";
         }
         $_loan_list->setSQLCriteria($_criteria);
-        $_loan_list->column_width[0] = '5%';
+        $_loan_list->column_width[0] = '8%';
         $_loan_list->modifyColumnContent(0, '<input type="checkbox" name="basket[]" class="basketItem" value="{column_value}" />');
 
         // set table and table header attributes
@@ -572,7 +572,8 @@ if (!$is_member_login) {
         $_loan_list->using_AJAX = false;
         // return the result
         $_result = $_loan_list->createDataGrid($dbs, $_table_spec, $num_recs_show);
-        $_result = '<div class="memberLoanListInfo">'.$_loan_list->num_rows.' '.__('item(s) currently on loan').' | <a href="?p=download_current_loan">Download All Current Loan</a></div>'."\n".$_result;
+        $_result = '<div class="memberLoanListInfo">'.$_loan_list->num_rows.' '.__('item(s) currently on loan').
+            ' | <a href="?p=download_current_loan">'.__('Download All Current Loan').'</a></div>'."\n".$_result;
         return $_result;
     }
 
@@ -607,7 +608,8 @@ if (!$is_member_login) {
         $_loan_hist->using_AJAX = false;
         // return the result
         $_result = $_loan_hist->createDataGrid($dbs, $_table_spec, $num_recs_show);
-        $_result = '<div class="memberLoanHistInfo"> &nbsp;'.$_loan_hist->num_rows.' '.__('item(s) loan history').' | <a href="?p=download_loan_history">Download All Loan History</a></div>'."\n".$_result;
+        $_result = '<div class="memberLoanHistInfo"> &nbsp;'.$_loan_hist->num_rows.' '.__('item(s) loan history').
+            ' | <a href="?p=download_loan_history">'.__('Download All Loan History').'</a></div>'."\n".$_result;
         return $_result;
     }
     /* Experimental Loan History - end */

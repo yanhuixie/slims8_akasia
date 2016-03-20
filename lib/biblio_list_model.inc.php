@@ -425,7 +425,9 @@ abstract class biblio_list_model
       $_buffer .= '<item>'."\n";
       $_buffer .= ' <title><![CDATA['.trim($_biblio_d['title']).']]></title>'."\n";
       $_buffer .= ' <link><![CDATA[http://'.$_SERVER['SERVER_NAME'].SWB.'/index.php?p=show_detail&id='.$_biblio_d['biblio_id'].']]></link>'."\n";
-      $_buffer .= ' <pubDate><![CDATA['.date('D, d F Y H:i:s', strtotime($_biblio_d['input_date'])).']]></pubDate>'."\n";
+      $input_date_txt = isset($_biblio_d['input_date']) && !empty($_biblio_d['input_date']) ?
+          date('D, d F Y H:i:s', strtotime($_biblio_d['input_date'])) : '';
+      $_buffer .= ' <pubDate><![CDATA['.$input_date_txt.']]></pubDate>'."\n";
 
       // get the authors data
       $_authors = $this->getAuthors($this->obj_db, $_biblio_d['biblio_id']);
